@@ -16,9 +16,9 @@ body {
 h1 {
   margin: 30px;
   font-family: 'Indie Flower';
-  text-shadow: 5px 0 #202020;
+  text-shadow:4px 4px 5px rgba(0, 0, 0, 0.258);
   font-size: 6rem;
-  color: #4ECCA3;
+  color: #010101;
 }
 
 p {
@@ -31,10 +31,47 @@ img {
   width: 80%;
 }
 
-footer {
-  margin-top: 5%;
-  color: #EEEEEE;
-  text-align: center;
-  font-family: 'Indie Flower', cursive;
+.reload-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
 
+.reload-button {
+  padding: 10px 20px;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Indie Flower', cursive;
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.confetti {
+  font-size: 40px;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  animation: confetti-fall 2s ease-out forwards;
+}
+
+.left-confetti {
+  left: 10px;
+}
+
+.right-confetti {
+  right: 10px;
+}
+
+@keyframes confetti-fall {
+  0% {
+    opacity: 1;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(100vh);
+  }
 }
