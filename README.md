@@ -18,7 +18,7 @@ Welcome to the Dice Game! This is a simple web-based game where two dice are tos
 
 ## File Structure 📁
 
-- `index.html`: The main HTML file that contains the game interface and logic.
+- `dice.html`: The main HTML file that contains the game interface and logic.
 - `styles.css`: CSS file for styling the game layout.
 - `index.js`: JavaScript file containing the dice roll logic and winner determination.
 - `images/`: Folder containing images of different dice possibilities.
