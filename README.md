@@ -27,7 +27,7 @@ Welcome to the Dice Game! This is a simple web-based game where two dice are tos
 
 To run the game locally, follow these steps:
 
-1. Clone this repository: `git clone https://github.com/your-username/dice-game.git`
+1. Clone this repository: `git clone https://github.com/abhinav0git/dice-game`
 2. Navigate to the project directory: `cd dice-game`
 3. Open the `dice.html` file in your preferred web browser.
 
