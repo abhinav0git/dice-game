@@ -10,13 +10,27 @@ var randomImageSource2 = "images/dice" + randomNumber2 + ".png";
 document.querySelectorAll("img")[1].setAttribute("src", randomImageSource2);
 
 
-//If player 1 wins
 if (randomNumber1 > randomNumber2) {
-  document.querySelector("h1").innerHTML = "🎉Player 1 Wins!";
-}
-else if (randomNumber2 > randomNumber1) {
-  document.querySelector("h1").innerHTML = "Player 2 Wins!🎉";
-}
-else {
+  document.querySelector("h1").innerHTML = "Player 1 Wins!";
+  showConfetti("left");
+} else if (randomNumber2 > randomNumber1) {
+  document.querySelector("h1").innerHTML = "Player 2 Wins!";
+  showConfetti("right");
+} else {
   document.querySelector("h1").innerHTML = "Draw";
+}
+
+
+function showConfetti(position) {
+  var confettiElement = document.createElement("span");
+  confettiElement.innerHTML = "🎊🎊";
+  confettiElement.classList.add("confetti");
+
+  if (position === "left") {
+    confettiElement.classList.add("left-confetti");
+  } else if (position === "right") {
+    confettiElement.classList.add("right-confetti");
+  }
+
+  document.body.appendChild(confettiElement);
 }
